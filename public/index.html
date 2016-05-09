@@ -6,6 +6,7 @@
 
   <script src="
 https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>
 
   <script src="./javascripts/app.js"></script>
   <script src="./javascripts/controllers/main.ctrl.js"></script>
@@ -25,8 +26,7 @@ https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
 </nav>
 
 <main class="col-md-10 col-md-offset-1">
-  <h1>AnGuLar Pirates</h1>
-  <h2 ng-bind="test"></h2>
+  <div ng-view></div>
 </main>
 
 </body>
