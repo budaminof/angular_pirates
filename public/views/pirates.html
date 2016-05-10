@@ -1,1 +1,13 @@
-<h1>Pirates</h1>
+<section ng-repeat="pirate in pirates" class="jumbotron" style="padding:10px">
+  <article class="row">
+
+    <div class="col-md-4">
+      <img ng-src="{{pirate.image_url}}" style="width:400px">
+    </div>
+    <div class="col-md-6 col-md-offset-1">
+      <h2 ng-bind="pirate.name"></h2>
+      <h3 ng-bind="pirate.accessory"></h3>
+      <h3 ng-bind="pirate.poison"></h3>
+    </div>
+  </article>
+</section>
